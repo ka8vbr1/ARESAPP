@@ -233,8 +233,8 @@ export default function HomeScreen() {
         <View style={styles.header}>
           <View>
             <Text style={styles.welcomeText}>Welcome,</Text>
-            <Text style={styles.nameText}>{user?.fullName}</Text>
-            <Text style={styles.callsignText}>{user?.callsign}</Text>
+            <Text style={styles.nameText}>{user?.fullName || 'User'}</Text>
+            <Text style={styles.callsignText}>{user?.callsign || 'N/A'}</Text>
           </View>
           <View style={styles.groupBadge}>
             <Text style={styles.groupText}>
